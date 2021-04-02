@@ -56,7 +56,7 @@ h1 {
   font-size: 15px;
   border-radius: 25px;
   background-color: white;
-  padding: 1rem 2.3rem;
+  padding: 0.8rem 2.3rem;
   transition: all 0.5s ease;
 }
 
@@ -88,4 +88,29 @@ h1 {
 }
 .card-luxury button {
   color: hsl(179, 100%, 13%);
+}
+
+@media screen and (max-width: 950px) {
+  main {
+    margin: auto;
+    width: unset;
+
+    flex-direction: column;
+    background-color: hsl(179, 100%, 13%);
+  }
+
+  .card {
+    border-radius: 0;
+  }
+
+  .card-suv {
+    transform: translateY(-0.4rem);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  .card-luxury {
+    transform: translateY(-0.8rem);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
 }
